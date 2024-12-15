@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"]</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    </head>
+<body>
+    <nav class="navbar navbar-light top-navbar bg-primary">
+        <div class="container-fluid">
+            <!-- Left Logo -->
+            <a class="navbar-brand">
+                <img src="~/Images/left-logo.png" class="img-fluid" alt="Ministry of Women Child Development" style="max-height: 70px;">
+            </a>
+            <a class="navbar-brand">
+                <img src="~/Images/we2.png" class="img-fluid" alt="Ministry of Women Child Development" style="max-height: 70px;">
+            </a>
+            <a class="navbar-brand">
+                <img src="~/Images/we5.jpeg" class="img-fluid" alt="Ministry of Women Child Development" style="max-height: 70px;">
+            </a>
+            <a class="navbar-brand">
+                <img src="~/Images/we6.jpeg" class="img-fluid" alt="Ministry of Women Child Development" style="max-height: 70px;">
+            </a>
+
+            <!-- Center Title and Emblem -->
+            <div class="text-center mx-auto text-white">
+                <a>
+                    <img src="~/Images/emblem-dark.png" class="img-fluid" alt="National Emblem" style="max-height: 90px;">
+                </a>
+                <div>
+                    <span class="d-block fw-bold">महिला एवं बाल विकास मंत्रालय</span>
+                    <span class="d-block fw-bold">Ministry of Women &amp; Child Development</span>
+                </div>
+            </div>
+
+            <!-- Right Logo -->
+            <a class="navbar-brand">
+                <img src="~/Images/we7.png" class="img-fluid" alt="Beti Bachao" style="max-height: 70px;">
+            </a>
+            <a class="navbar-brand">
+                <img src="~/Images/we4.png" class="img-fluid" alt="Beti Bachao" style="max-height: 70px;">
+            </a>
+            <a class="navbar-brand">
+                <img src="~/Images/we3.png" class="img-fluid" alt="Beti Bachao" style="max-height: 70px;">
+            </a>
+            <a class="navbar-brand">
+                <img src="~/Images/right-logo.png" class="img-fluid" alt="Beti Bachao" style="max-height: 70px;">
+            </a>
+        </div>
+    </nav>
+
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary border border-dark border-top border-bottom">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent1">
+                <ul class="navbar-nav w-100 justify-content-evenly fw-bold">
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="AboutUs">ABOUT US</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="LegislationAndPolicy">LEGISLATIONS & POLICY</a>
+                    </li>
+                    @if (User.Identity.IsAuthenticated)
+                    {
+                        @if (User.IsInRole("STEP"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="STEP" asp-action="STEPDashboard">STEP</a>
+                            </li>
+                        }
+                        @if (User.IsInRole("NGO"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="NGOs" asp-action="NGOsDashboard">NGOS</a>
+                            </li>
+                        }
+                        @if (User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link text-white" asp-area="" asp-controller="Admin" asp-action="AdminDashboard">ADMIN</a>
+                            </li>
+                        }
+                    }
+                    else
+                    {
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="STEP" asp-action="STEPDashboard">STEP</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="NGOs" asp-action="NGOsDashboard">NGOS</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-white" asp-area="" asp-controller="Admin" asp-action="AdminDashboard">ADMIN</a>
+                        </li>
+                    }
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Faq">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+            <ul class="navbar-nav ms-auto fw-bold">
+                @if (User.Identity.IsAuthenticated)
+                {
+                    <li class="nav-item">
+                        <h6 class="text-white">hello, @User.Identity.Name</h6>
+                        <form asp-action="Logout" method="post">
+                            <button type="submit" class="btn btn-link nav-link text-white fw-bold">LOGOUT</button>
+                        </form>
+                    </li>
+                }
+                else
+                {
+                    <li class="nav-item">
+                        <a class="nav-link text-white" asp-area="" asp-controller="Home" asp-action="Login">LOGIN</a>
+                    </li>
+                }
+            </ul>
+        </div>
+    </nav>
+    @RenderBody()
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2024 - Women_Empowerment - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

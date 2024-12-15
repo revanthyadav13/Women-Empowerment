@@ -1,0 +1,43 @@
+﻿@model Women_Empowerment.Models.NGO
+@{
+    ViewBag.Title = "NGO Registration Form";
+    Layout = "~/Views/Shared/NGOsLayout.cshtml";
+}
+ <div class="container mt-4">
+        <h2>NGO Registration Form</h2>
+        <form asp-action="Submit" method="post">
+            <div class="form-group">
+                <label asp-for="Name" class="control-label">NGO Name:</label>
+                <input asp-for="Name" class="form-control" required>
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Location" class="control-label">Location:</label>
+                <input asp-for="Location" class="form-control" required>
+                <span asp-validation-for="Location" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="TrainingSectors" class="control-label">Training Sectors:</label>
+                <input asp-for="TrainingSectors" class="form-control">
+                <span asp-validation-for="TrainingSectors" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="ContactDetails" class="control-label">Contact Details:</label>
+                <textarea asp-for="ContactDetails" class="form-control" rows="3"></textarea>
+                <span asp-validation-for="ContactDetails" class="text-danger"></span>
+            </div>
+            <!-- RegistrationId field is displayed as readonly -->
+            <div class="form-group">
+                <label asp-for="RegistrationId" class="control-label">Registration ID:</label>
+                <input asp-for="RegistrationId" class="form-control" readonly value="Autogenerate">
+                <span asp-validation-for="RegistrationId" class="text-danger"></span>
+            </div>
+            <!-- Status field is displayed as readonly with a default value -->
+            <div class="form-group">
+                <label asp-for="Status" class="control-label">Status:</label>
+                <input asp-for="Status" class="form-control" readonly value="-">
+                <span asp-validation-for="Status" class="text-danger"></span>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>

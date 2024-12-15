@@ -1,0 +1,207 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = Women_Empowerment
+build_property.RootNamespace = Women_Empowerment
+build_property.ProjectDir = C:\Users\revan\source\repos\Women Empowerment\Women Empowerment\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\revan\source\repos\Women Empowerment\Women Empowerment
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Admin/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWJvdXRVcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Admin/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Admin/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ29udGFjdFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Admin/NgoAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTmdvQWRkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Admin/NgoRemove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTmdvUmVtb3ZlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Admin/NgoUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cTmdvVXBkYXRlLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Admin/TraineeAdd.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVHJhaW5lZUFkZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Admin/TraineeRemove.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVHJhaW5lZVJlbW92ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Admin/TraineeUpdate.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cVHJhaW5lZVVwZGF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Home/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Home/Faq.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxGYXEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Home/LegislationAndPolicy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMZWdpc2xhdGlvbkFuZFBvbGljeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Home/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Home/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Home/Registration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxSZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/NGOs/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkdPc1xDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/NGOs/Criteria.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkdPc1xDcml0ZXJpYS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/NGOs/FAQ.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkdPc1xGQVEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/NGOs/Fund.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkdPc1xGdW5kLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/NGOs/FundingNorms.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkdPc1xGdW5kaW5nTm9ybXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/NGOs/NGORegistration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkdPc1xOR09SZWdpc3RyYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/NGOs/NGOsDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkdPc1xOR09zRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/NGOs/Organisation.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkdPc1xPcmdhbmlzYXRpb24uY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/NGOs/Organizations.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkdPc1xPcmdhbml6YXRpb25zLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/NGOs/Status.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcTkdPc1xTdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Shared/AdminLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEFkbWluTGF5b3V0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Shared/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Shared/NGOsLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXE5HT3NMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Shared/STEPLayout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXFNURVBMYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/AboutUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxBYm91dFVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/Agriculture.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxBZ3JpY3VsdHVyZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/ContactUs.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxDb250YWN0VXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/FAq.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxGQXEuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/Guideline.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxHdWlkZWxpbmUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/RegisteredNgos.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxSZWdpc3RlcmVkTmdvcy5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/Status.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxTdGF0dXMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/STEPDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxTVEVQRGFzaGJvYXJkLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/STEPRegistration.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxTVEVQUmVnaXN0cmF0aW9uLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/Stitching.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxTdGl0Y2hpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/STEP/Tailoring.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU1RFUFxUYWlsb3JpbmcuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/revan/source/repos/Women Empowerment/Women Empowerment/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

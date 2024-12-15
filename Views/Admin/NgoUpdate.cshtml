@@ -1,0 +1,48 @@
+﻿@model IEnumerable<Women_Empowerment.Models.NGO>
+
+@{
+    ViewBag.Title = "NGOs List";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>NGOs List</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Registration ID</th>
+                <th>NGO ID</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>TrainingSectors</th>
+                <th>ContactDetails</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ngo in Model)
+            {
+                <tr>
+                    <td>@ngo.RegistrationId</td>
+                    <td>@ngo.NGOId</td>
+                    <td>@ngo.Name</td>
+                    <td>@ngo.Location</td>
+                    <td>@ngo.TrainingSectors</td>
+                    <td>@ngo.ContactDetails</td>
+                    <td>@ngo.Status</td>
+                    <td>
+                        <form asp-action="NgoUpdate" method="post">
+                            <input type="hidden" name="ngoId" value="@ngo.NGOId" />
+                            <input type="text" name="name" value="@ngo.Name" class="form-control" />
+                            <input type="text" name="location" value="@ngo.Location" class="form-control" />
+                            <input type="text" name="trainingSectors" value="@ngo.TrainingSectors" class="form-control" />
+                            <input type="text" name="contactDetails" value="@ngo.ContactDetails" class="form-control" />
+                            <input type="text" name="status" value="@ngo.Status" class="form-control" />
+                            <button type="submit" class="btn btn-primary">NGO Update</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

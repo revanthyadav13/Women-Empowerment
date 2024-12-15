@@ -1,0 +1,40 @@
+﻿@{
+    ViewData["Title"] = "Login Page";
+}
+
+
+<body>
+    <div class="container center-form">
+        <div class="col-md-6 mt-5 mb-5 mx-auto">
+            <div class="card shadow">
+                <div class="card-header text-center bg-primary">
+                    <h3 class="text-white">Login</h3>
+                </div>
+                <div class="card-body">
+                    <form id="loginForm" asp-action="LoginPost" method="post">
+                        <div class="mb-3">
+                            <label for="username" class="form-label">Username</label>
+                            <input type="text" name="username" class="form-control" id="username" placeholder="Enter your username" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" name="password" class="form-control" id="password" placeholder="Enter your password" required>
+                        </div>
+                        <div class="d-grid gap-2">
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                        <div class="mt-3 text-center">
+                            <a href="~/Home/Registration">Create Account?</a>
+                            <br>
+                        </div>
+                        @if (TempData["LoginErrorMessage"] != null)
+                        {
+                            <div class="alert alert-danger mt-3 text-center">@TempData["LoginErrorMessage"]</div>
+                        }
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+

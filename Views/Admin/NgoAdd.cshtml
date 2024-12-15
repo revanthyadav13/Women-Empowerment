@@ -1,0 +1,43 @@
+﻿@model IEnumerable<Women_Empowerment.Models.NGO>
+
+@{
+    ViewBag.Title = "Pending NGOs";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>Pending NGOs</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Registration ID</th>
+                <th>NGO ID</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>TrainingSectors</th>
+                <th>ContactDetails</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ngo in Model)
+            {
+                <tr>
+                    <td>@ngo.RegistrationId</td>
+                    <td>@ngo.NGOId</td>
+                    <td>@ngo.Name</td>
+                    <td>@ngo.Location</td>
+                    <td>@ngo.TrainingSectors</td>
+                    <td>@ngo.ContactDetails</td>
+                    <td>@ngo.Status</td>
+                    <td>
+                        <form asp-action="NgoAdd" method="post">
+                            <input type="hidden" name="ngoId" value="@ngo.NGOId" />
+                            <button type="submit" class="btn btn-primary">Add</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

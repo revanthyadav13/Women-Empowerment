@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Women_Empowerment.Models.STEP>
+@{
+    ViewBag.Title = "Trainees List";
+    Layout = "~/Views/Shared/AdminLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>Trainees List</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Registration ID</th>
+                <th>Trainee Id</th>
+                <th>Name</th>
+                <th>Course</th>
+                <th>Course Duration</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var Trainee in Model)
+            {
+                <tr>
+                    <td>@Trainee.RegistrationId</td>
+                    <td>@Trainee.TraineeId</td>
+                    <td>@Trainee.Name</td>
+                    <td>@Trainee.Course</td>
+                    <td>@Trainee.CourseDuration</td>
+                    <td>@Trainee.Status</td>
+                    <td>
+                        <form asp-action="TraineeUpdate" method="post">
+                            <input type="hidden" name="traineeId" value="@Trainee.TraineeId" />
+                            <input type="text" name="name" value="@Trainee.Name" class="form-control" />
+                            <input type="text" name="course" value="@Trainee.Course" class="form-control" />
+                            <input type="text" name="courseDuration" value="@Trainee.CourseDuration" class="form-control" />
+                            <input type="text" name="status" value="@Trainee.Status" class="form-control" />
+                            <button type="submit" class="btn btn-primary">Update</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

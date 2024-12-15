@@ -1,0 +1,38 @@
+﻿@model IEnumerable<Women_Empowerment.Models.NGO>
+
+
+@{
+    ViewBag.Title = "Registered Ngos";
+    Layout = "~/Views/Shared/STEPLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <h2>Registered Ngos</h2>
+    <table class="table table-striped">
+        <thead>
+            <tr>
+                <th>Registration ID</th>
+                <th>NGO ID</th>
+                <th>Name</th>
+                <th>Location</th>
+                <th>TrainingSectors</th>
+                <th>ContactDetails</th>
+                <th>Status</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var ngo in Model)
+            {
+                <tr>
+                    <td>@ngo.RegistrationId</td>
+                    <td>@ngo.NGOId</td>
+                    <td>@ngo.Name</td>
+                    <td>@ngo.Location</td>
+                    <td>@ngo.TrainingSectors</td>
+                    <td>@ngo.ContactDetails</td>
+                    <td>@ngo.Status</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

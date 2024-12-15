@@ -1,0 +1,74 @@
+﻿@{
+    ViewBag.Title = "NGOs Status";
+    Layout = "~/Views/Shared/NGOsLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h2>NGOs Status</h2>
+        </div>
+        <div class="card-body">
+            @if (Model is Women_Empowerment.Models.NGO)
+            {
+                // Handle the single NGO scenario
+                <dl class="row">
+                    <dt class="col-sm-3">Name:</dt>
+                    <dd class="col-sm-9">@Model.Name</dd>
+
+                    <dt class="col-sm-3">Location:</dt>
+                    <dd class="col-sm-9">@Model.Location</dd>
+
+                    <dt class="col-sm-3">Training Sector:</dt>
+                    <dd class="col-sm-9">@Model.TrainingSectors</dd>
+
+                    <dt class="col-sm-3">Contact Details:</dt>
+                    <dd class="col-sm-9">@Model.ContactDetails</dd>
+
+                    <dt class="col-sm-3">Registration Id:</dt>
+                    <dd class="col-sm-9">@Model.RegistrationId</dd>
+
+                    <dt class="col-sm-3">Status:</dt>
+                    <dd class="col-sm-9">@Model.Status</dd>
+                </dl>
+            }
+            else if (Model is List<Women_Empowerment.Models.NGO>)
+            {
+                // Handle the list of NGOs scenario
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Name</th>
+                            <th>Location</th>
+                            <th>Training Sector</th>
+                            <th>Contact Details</th>
+                            <th>Registration Id</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var ngo in (List<Women_Empowerment.Models.NGO>)Model)
+                        {
+                            <tr>
+                                <td>@ngo.Name</td>
+                                <td>@ngo.Location</td>
+                                <td>@ngo.TrainingSectors</td>
+                                <td>@ngo.ContactDetails</td>
+                                <td>@ngo.RegistrationId</td>
+                                <td>@ngo.Status</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else
+            {
+                // Handle the case where the model is not recognized
+                <p>The NGO information could not be displayed.</p>
+            }
+        </div>
+        <div class="card-footer">
+            <a asp-action="NGOsDashboard" class="btn btn-secondary">Back to NGO Dashboard</a>
+        </div>
+    </div>
+</div>

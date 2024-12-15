@@ -1,0 +1,105 @@
+﻿@{
+    ViewBag.Title = "Trainees Status";
+    Layout = "~/Views/Shared/STEPLayout.cshtml";
+}
+
+<div class="container mt-4">
+    <div class="card">
+        <div class="card-header">
+            <h2>Trainees Status</h2>
+        </div>
+        <div class="card-body">
+            @if (Model is List<Women_Empowerment.Models.STEP>)
+            {
+                // Handle the list of trainees
+                <table class="table table-striped">
+                    <thead>
+                        <tr>
+                            <th>Trainee ID</th>
+                            <th>Name</th>
+                            <th>Email</th>
+                            <th>Date of Birth</th>
+                            <th>Contact Number</th>
+                            <th>Family Member's Name</th>
+                            <th>Relation</th>
+                            <th>Course</th>
+                            <th>Course Duration</th>
+                            <th>Address</th>
+                            <th>Registration Id</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        @foreach (var trainee in Model)
+                        {
+                            <tr>
+                                <td>@trainee.TraineeId</td>
+                                <td>@trainee.Name</td>
+                                <td>@trainee.Email</td>
+                                <td>@trainee.DOB.ToString("dd/MM/yyyy")</td>
+                                <td>@trainee.ContactNumber</td>
+                                <td>@trainee.FamilyMembersName</td>
+                                <td>@trainee.Relation</td>
+                                <td>@trainee.Course</td>
+                                <td>@trainee.CourseDuration</td>
+                                <td>@trainee.Address</td>
+                                <td>@trainee.RegistrationId</td>
+                                <td>@trainee.Status</td>
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            }
+            else if (Model is Women_Empowerment.Models.STEP)
+            {
+                // Handle the single trainee
+                <dl class="row">
+                    <dt class="col-sm-3">Trainee ID:</dt>
+                    <dd class="col-sm-9">@Model.TraineeId</dd>
+
+                    <dt class="col-sm-3">Name:</dt>
+                    <dd class="col-sm-9">@Model.Name</dd>
+
+                    <dt class="col-sm-3">Email:</dt>
+                    <dd class="col-sm-9">@Model.Email</dd>
+
+                    <dt class="col-sm-3">Date of Birth:</dt>
+                    <dd class="col-sm-9">@Model.DOB.ToString("dd/MM/yyyy")</dd>
+
+                    <dt class="col-sm-3">Contact Number:</dt>
+                    <dd class="col-sm-9">@Model.ContactNumber</dd>
+
+                    <dt class="col-sm-3">Family Member's Name:</dt>
+                    <dd class="col-sm-9">@Model.FamilyMembersName</dd>
+
+                    <dt class="col-sm-3">Relation:</dt>
+                    <dd class="col-sm-9">@Model.Relation</dd>
+
+                    <dt class="col-sm-3">Course:</dt>
+                    <dd class="col-sm-9">@Model.Course</dd>
+
+                    <dt class="col-sm-3">Course Duration:</dt>
+                    <dd class="col-sm-9">@Model.CourseDuration</dd>
+
+                    <dt class="col-sm-3">Address:</dt>
+                    <dd class="col-sm-9">@Model.Address</dd>
+
+                    <dt class="col-sm-3">Registration Id:</dt>
+                    <dd class="col-sm-9">@Model.RegistrationId</dd>
+
+
+                    <dt class="col-sm-3">Status:</dt>
+                    <dd class="col-sm-9">@Model.Status</dd>
+                </dl>
+            }
+            else
+            {
+                // Handle the case where the model is not recognized
+                <p>The trainee information could not be displayed.</p>
+            }
+        </div>
+        <div class="card-footer">
+            <a asp-action="STEPDashboard" class="btn btn-secondary">Back to STEP Dashboard</a>
+        </div>
+    </div>
+</div>
